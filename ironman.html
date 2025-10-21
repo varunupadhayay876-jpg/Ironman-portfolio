@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website design using html or css--</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="leftbox">
+            <div class="logo">
+                <img src="logo.jpg" class="logo" alt="">
+                <div class="searchbox">
+                    <img src="search.png" alt="">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="vertical-line"></div>
+                <ul>
+                    <li><a href="#">PRODUCTION</a></li>
+                    <li><a href="#">FACILITY</a></li>
+                    <li><a href="#">MACHINISM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightbox">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                </ul>
+            </nav>
+            <h2>CHARACTER <br> THE IRON MAN</h2>
+            <div class="robot">
+                <img src="ironman.jpg" alt="">
+                <h1>AVENGER</h1>
+                <div class="features">
+                    <div>
+                        <small>WATCH PREVIEW</small>
+                        <img src="play.png" alt="">
+                    </div>
+                    <div>
+                        <small>THE MAKING</small>
+                        <img src="setting.png" alt="">
+                    </div>
+                    <div>
+                        <small>DOWNLOAD PDF</small>
+                        <img src="download.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="circle"></div>
+            <div class="pagination">
+                <ul>
+                    <li class="active"><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </div>
+            <img src="volume1.jpg" alt="" class="volume">
+        </div>
+    </div>
+    <div class="smallcursor"></div>
+    <script>
+        var smallcursor = document.querySelector(".smallcursor");
+        document.onmousemove = function(e){
+            smallcursor.style.left = (e.pageX-5)+ "px";
+            smallcursor.style.top = (e.pagey-5)+ "px";
+        }
+    </script>
+</body>
+
+</html>
